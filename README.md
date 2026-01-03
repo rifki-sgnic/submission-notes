@@ -1,16 +1,39 @@
-# React + Vite
+# NotesApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project was created as part of the submission for the "Belajar Fundamental Aplikasi Web dengan React" class on Dicoding. NotesApp is a Single Page Application (SPA) built using React (Vite) and TailwindCSS. This application focuses on implementing APIs, Context, and Hooks.
 
-Currently, two official plugins are available:
+## Key Features
+- **User Authentication**: Login and register users using APIs.
+- **Notes Management**: Add, view details, archive, and delete notes.
+- **Theme and Language**: Supports theme settings (dark/light) and localization (Indonesian/English).
+- **Notifications**: Display notifications using Context and Hooks.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+- **React**: The main library for building user interfaces.
+- **Vite**: A build tool for developing React applications.
+- **TailwindCSS**: A CSS framework for fast and responsive styling.
+- **Context API**: For managing global states such as authentication, theme, and notifications.
+- **Custom Hooks**: To separate reusable application logic.
 
-## React Compiler
+## Project Structure
+```
+public/          # Folder for public assets
+src/             # Main folder for source code
+  api/           # APIs for authentication and notes
+  components/    # UI components like Alert, Navigation, etc.
+  context/       # Context for global states
+  hooks/         # Custom hooks
+  layouts/       # Main application layout
+  pages/         # Application pages (Home, Detail, Archive, etc.)
+  utils/         # Utility functions
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How to Run the Project
+1. Make sure Node.js is installed on your computer.
+2. Clone this repository.
+3. Run the following commands in the terminal:
+   ```bash
+   npm install
+   npm run dev
+   ```
+4. Open the application in the browser via the URL provided by Vite (usually `http://localhost:5173`).
